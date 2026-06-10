@@ -1,0 +1,25 @@
+# Reproducibility environment for
+#   "A Kolmogorov-Arnold Network-Based Learning Framework for Fractional-Order
+#    Viscoelastic Constitutive Models: Forward Solving and Parameter Inversion"
+#
+# Python 3.12.10 (Windows 10). GPU experiments used an NVIDIA RTX 3070 Laptop (CUDA 11.8).
+#
+# IMPORTANT: install the GPU build of PyTorch FIRST from the CUDA-11.8 wheel index,
+# then the rest from PyPI:
+#
+#   pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu118
+#   pip install -r requirements.txt
+#
+# (For a CPU-only run, replace the first line with: pip install torch==2.7.1)
+
+torch==2.7.1+cu118
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.10.9
+pandas==3.0.3
+scikit-learn==1.8.0
+tqdm==4.67.3
+PyYAML==6.0.3
+xlrd==2.0.2
+sympy==1.14.0
+psutil==7.2.2
